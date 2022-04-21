@@ -6,10 +6,10 @@ ENV INFO           wumei smart open source living iot platform
 ENV SERVERS     nginx:1.14.2, redis-server:5.0.14, emqx:4.0, openjdk:8u322-jre-slim-buster
 
 # mysql环境变量
-ENV DB_HOST             localhost
-ENV DB_NAME           wumei
+ENV DB_HOST             192.168.1.106:3306
+ENV DB_NAME           wumei-smart
 ENV DB_USER             root
-ENV DB_PASSWORD   admin
+ENV DB_PASSWORD   Lcw123456.
 
 RUN apt-get update && \
 	# 安装网络工具和设置时区
